@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is on branch ${{ github.ref }}"
-      - run: python /python/test.py
+      - run: python ./.github/python/test.py
