@@ -1,8 +1,8 @@
-name: GitHub Actions Demo
+name: Test
 on: [push]
 jobs:
   Explore-GitHub-Actions:
-    if: contains('cherry_dev')
+    if: contains( github.ref, 'cherry_dev')
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is on branch ${{ github.ref }}"
