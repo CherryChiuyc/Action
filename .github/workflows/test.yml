@@ -8,6 +8,6 @@ jobs:
       - run: echo "This is on branch ${{ github.ref }}"
       - name: Run python
         run: |
-          apt-get python3.8
+          apt-get install python3.8
           python ./.github/python/test.py
         shell: bash
